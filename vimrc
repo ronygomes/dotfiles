@@ -24,6 +24,9 @@ set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " Always show line number
 set number
 
+" No welcome screen
+set shortmess+=I
+
 " Disable arrow keys for faster navigation
 " Disables in Normal, Select, Operator Pending, Visual mode
 noremap <Up> <Nop>

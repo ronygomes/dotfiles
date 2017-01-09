@@ -2,6 +2,9 @@
 " This must be first as it changes other options
 set nocompatible
 
+" Load plugins using Plug
+source $HOME/.vim/plug.vim
+
 " Restore default backspace behaviour
 set backspace=indent,eol,start
 

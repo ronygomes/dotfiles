@@ -27,6 +27,9 @@ set number
 " No welcome screen
 set shortmess+=I
 
+" Format JS code, Node and js-beautify needed to be installed
+autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
+
 " Disable arrow keys for faster navigation
 " Disables in Normal, Select, Operator Pending, Visual mode
 noremap <Up> <Nop>

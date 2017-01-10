@@ -33,8 +33,9 @@ autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
 " Save/Load cursor position of file
 " Default view directory is .vim/view
 " :help viewdir
-autocmd BufWinLeave * mkview
-autocmd BufWinEnter * silent loadview
+" Added only for js, Need to add for other format
+autocmd BufWinLeave *.js mkview
+autocmd BufWinEnter *.js silent loadview
 
 " Disable arrow keys for faster navigation
 " Disables in Normal, Select, Operator Pending, Visual mode

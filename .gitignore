@@ -2,3 +2,4 @@
 !.gitignore
 vim/autoload/plug.vim
 vim/plugged
+vim/view

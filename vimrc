@@ -30,6 +30,12 @@ set shortmess+=I
 " Format JS code, Node and js-beautify needed to be installed
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
 
+" Save/Load cursor position of file
+" Default view directory is .vim/view
+" :help viewdir
+autocmd BufWinLeave * mkview
+autocmd BufWinEnter * silent loadview
+
 " Disable arrow keys for faster navigation
 " Disables in Normal, Select, Operator Pending, Visual mode
 noremap <Up> <Nop>

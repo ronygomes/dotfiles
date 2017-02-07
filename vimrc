@@ -56,3 +56,10 @@ cnoremap <Up> <Nop>
 cnoremap <Down> <Nop>
 cnoremap <Left> <Nop>
 cnoremap <Right> <Nop>
+
+" Enable incremental search and highlight
+set hlsearch
+set incsearch
+
+" Clear search highlighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

@@ -5,14 +5,19 @@ set nocompatible
 " Load plugins using Plug
 source $HOME/.vim/plugins.vim
 
-" Restore default backspace behaviour
-set backspace=indent,eol,start
+" Default leader key \
+let mapleader="\<Space>"
+let g:netrw_banner=0
+let g:netrw_liststyle=3
 
 " Switch syntax highlighting on
 syntax on
 
 " Enable file type detection and do language-dependent indenting
 filetype plugin indent on
+
+" Restore default backspace behaviour
+set backspace=indent,eol,start
 
 " Show invisible whitespace for transparency
 " Unable to display 'space' (Requires 7.4.710 onward)
@@ -26,6 +31,11 @@ set number
 
 " No welcome screen
 set shortmess+=I
+
+" Enable search highlight, incsearch and smartcase
+set hlsearch
+set incsearch
+set smartcase
 
 " Format JS code, Node and js-beautify needed to be installed
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
@@ -57,9 +67,12 @@ cnoremap <Down> <Nop>
 cnoremap <Left> <Nop>
 cnoremap <Right> <Nop>
 
-" Enable incremental search and highlight
-set hlsearch
-set incsearch
-
 " Clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" Make jump to mark useable
+nnoremap ' `
+nnoremap ` '
+
+nnoremap <silent> <Leader>N :<C-u>Explore<CR>
+nnoremap <silent> <Leader>n :<C-u>NERDTreeToggle<CR>

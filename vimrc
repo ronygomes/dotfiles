@@ -10,6 +10,11 @@ let mapleader="\<Space>"
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 
+" bufferline configuration :help bufferline-statusline
+let g:bufferline_echo = 0
+autocmd VimEnter * let &statusline='%{bufferline#refresh_status()}'.bufferline#get_status_string()
+set laststatus=2
+
 " Switch syntax highlighting on
 syntax on
 

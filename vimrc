@@ -9,7 +9,6 @@ source $HOME/.vim/plugins.vim
 let mapleader="\<Space>"
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-let g:user_emmet_leader_key='<Leader>e'
 
 " bufferline configuration :help bufferline-statusline
 let g:bufferline_echo = 0
@@ -42,6 +41,8 @@ set shortmess+=I
 set hlsearch
 set incsearch
 set smartcase
+
+set hidden
 
 " Format JS code, Node and js-beautify needed to be installed
 autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin

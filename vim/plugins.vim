@@ -10,7 +10,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'triglav/vim-visual-increment'
 Plug 'bling/vim-bufferline'
-Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-unimpaired'
 
 call plug#end()

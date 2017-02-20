@@ -9,6 +9,7 @@ source $HOME/.vim/plugins.vim
 let mapleader="\<Space>"
 let g:netrw_banner=0
 let g:netrw_liststyle=3
+let g:user_emmet_leader_key='<C-j>'
 
 " bufferline configuration :help bufferline-statusline
 let g:bufferline_echo = 0

@@ -9,7 +9,6 @@ call plug#begin('~/.vim/plugged')
 " Install plugins using :PlugInstall
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'triglav/vim-visual-increment'
-Plug 'bling/vim-bufferline'
 Plug 'tpope/vim-unimpaired'
 Plug 'mattn/emmet-vim'
 

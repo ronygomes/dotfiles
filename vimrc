@@ -11,16 +11,15 @@ let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:user_emmet_leader_key='<C-j>'
 
-" bufferline configuration :help bufferline-statusline
-let g:bufferline_echo = 0
-autocmd VimEnter * let &statusline='%{bufferline#refresh_status()}'.bufferline#get_status_string()
-set laststatus=2
-
 " Switch syntax highlighting on
 syntax on
 
 " Enable file type detection and do language-dependent indenting
 filetype plugin indent on
+
+" Always hide statusline, ruler
+set laststatus=0
+set noruler
 
 " Restore default backspace behaviour
 set backspace=indent,eol,start

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git add -u
+git commit --amend -m "$(git log -1 --pretty=%B)"
+git push -f $(git config branch.$(git rev-parse --abbrev-ref HEAD).remote) $(git rev-parse --abbrev-ref HEAD)

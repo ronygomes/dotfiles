@@ -1,5 +1,9 @@
 #!/bin/bash
 
+COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+REMOTE_NAME=$(git config branch.$BRANCH_NAME.remote)
+
 git add -u
-git commit --amend -m "$(git log -1 --pretty=%B)"
-git push -f $(git config branch.$(git rev-parse --abbrev-ref HEAD).remote) $(git rev-parse --abbrev-ref HEAD)
+git commit --amend -m "$COMMIT_MESSAGE"
+git push -f $REMOTE_NAME $BRANCH_NAME

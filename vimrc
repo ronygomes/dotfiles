@@ -10,6 +10,7 @@ let mapleader="\<Space>"
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:user_emmet_leader_key='<C-j>'
+let g:HardMode_hardmodeMsg=''
 
 " Switch syntax highlighting on
 syntax on
@@ -20,9 +21,6 @@ filetype plugin indent on
 " Always hide statusline, ruler
 set laststatus=0
 set noruler
-
-" Restore default backspace behaviour
-set backspace=indent,eol,start
 
 " Show invisible whitespace for transparency
 " Unable to display 'space' (Requires 7.4.710 onward)
@@ -54,32 +52,11 @@ autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
 autocmd BufWinLeave *.js mkview
 autocmd BufWinEnter *.js silent loadview
 
-" Disable arrow keys for faster navigation
-" Disables in Normal, Select, Operator Pending, Visual mode
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
-" Disables in insert mode
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-
-" Disables in Command mode
-" Use C-n and C-p for command mode history navigation
-cnoremap <Up> <Nop>
-cnoremap <Down> <Nop>
-cnoremap <Left> <Nop>
-cnoremap <Right> <Nop>
+" Enable HardMode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 " Clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
-" Make jump to mark useable
-nnoremap ' `
-nnoremap ` '
 
 nnoremap <silent> <Leader>N :<C-u>Explore<CR>
 nnoremap <silent> <Leader>n :<C-u>NERDTreeToggle<CR>

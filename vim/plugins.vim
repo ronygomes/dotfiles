@@ -11,5 +11,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'triglav/vim-visual-increment'
 Plug 'tpope/vim-unimpaired'
 Plug 'mattn/emmet-vim'
+Plug 'wikitopian/hardmode'
 
 call plug#end()

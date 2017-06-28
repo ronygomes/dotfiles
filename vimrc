@@ -10,7 +10,6 @@ let mapleader="\<Space>"
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:user_emmet_leader_key='<C-j>'
-let g:HardMode_hardmodeMsg=''
 
 " Switch syntax highlighting on
 syntax on
@@ -30,7 +29,7 @@ set list listchars=tab:▸\ ,eol:¬,trail:.
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 " Always show line number
-set number
+set relativenumber
 
 " No welcome screen
 set shortmess+=I
@@ -41,19 +40,6 @@ set incsearch
 set smartcase
 
 set hidden
-
-" Format JS code, Node and js-beautify needed to be installed
-autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
-
-" Save/Load cursor position of file
-" Default view directory is .vim/view
-" :help viewdir
-" Added only for js, Need to add for other format
-autocmd BufWinLeave *.js mkview
-autocmd BufWinEnter *.js silent loadview
-
-" Enable HardMode
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 " Clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

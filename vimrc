@@ -29,7 +29,7 @@ set list listchars=tab:▸\ ,eol:¬,trail:.
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 " Always show line number
-set relativenumber
+set number
 
 " No welcome screen
 set shortmess+=I

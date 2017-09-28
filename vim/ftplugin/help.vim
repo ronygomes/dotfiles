@@ -1,2 +1,2 @@
-" Open vim help in vertical split
-wincmd L
+" Open vim help in tab
+wincmd T

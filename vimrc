@@ -37,6 +37,7 @@ set shortmess+=I
 " Enable search highlight, incsearch and smartcase
 set hlsearch
 set incsearch
+set ignorecase
 set smartcase
 
 set hidden

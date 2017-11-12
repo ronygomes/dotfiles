@@ -41,6 +41,7 @@ set ignorecase
 set smartcase
 
 set hidden
+set cryptmethod=blowfish2
 
 " Clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

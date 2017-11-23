@@ -7,9 +7,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Install plugins using :PlugInstall
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'triglav/vim-visual-increment'
-Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 
 call plug#end()

@@ -47,4 +47,3 @@ set cryptmethod=blowfish2
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 nnoremap <silent> <Leader>N :<C-u>Explore<CR>
-nnoremap <silent> <Leader>n :<C-u>NERDTreeToggle<CR>

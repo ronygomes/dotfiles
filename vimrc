@@ -35,10 +35,7 @@ set number
 set shortmess+=I
 
 " Enable search highlight, incsearch and smartcase
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch incsearch ignorecase smartcase
 
 set hidden
 set cryptmethod=blowfish2

@@ -38,6 +38,9 @@ set shortmess+=I
 set hlsearch incsearch ignorecase smartcase
 set hidden
 
+" Set default filetype
+autocmd BufEnter * if &filetype == "" | setlocal filetype=text | endif
+
 if (v:version > 704) || (v:version == 704 && has('patch399'))
     set cryptmethod=blowfish2
 endif

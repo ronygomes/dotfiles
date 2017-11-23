@@ -36,9 +36,11 @@ set shortmess+=I
 
 " Enable search highlight, incsearch and smartcase
 set hlsearch incsearch ignorecase smartcase
-
 set hidden
-set cryptmethod=blowfish2
+
+if (v:version > 704) || (v:version == 704 && has('patch399'))
+    set cryptmethod=blowfish2
+endif
 
 " Clear search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>

@@ -9,5 +9,6 @@ call plug#begin('~/.vim/plugged')
 " Install plugins using :PlugInstall
 Plug 'triglav/vim-visual-increment'
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-commentary'
 
 call plug#end()

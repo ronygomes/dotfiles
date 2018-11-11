@@ -1,6 +1,7 @@
 " Use Vim settings, rather than Vi settings
 " This must be first as it changes other options
 set nocompatible
+set encoding=utf8
 
 " Load plugins using Plug
 source $HOME/.vim/plugins.vim

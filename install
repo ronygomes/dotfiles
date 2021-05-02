@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+CONFIG_ROOT="$(cd -- "$(dirname "$0")" >/dev/null 2>&1; pwd -P)"
+
+ln -s "$CONFIG_ROOT/vim" "$HOME/.vim"
+ln -s "$CONFIG_ROOT/vimrc" "$HOME/.vimrc"
+ln -s "$CONFIG_ROOT/tmux.conf" "$HOME/.tmux.conf"

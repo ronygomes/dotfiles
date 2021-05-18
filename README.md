@@ -1,8 +1,8 @@
 # dotfiles
 
-Personal configuraiton files
+Personal configuration files
 
-### Configuraiton Structure
+### Configuration Structure
 
 ```shell
 ├── README.md
